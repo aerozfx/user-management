@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Así se vincula un css con una web usando el método url_for. Se le pasan dos valores, 'static' y filename = 'nombre del fichero'-->
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename = 'css/css.css')}}"
+    />
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="/">Inicio</a>
+        </li>
+        <li>
+          <a href="{{url_for('retrieve_user_data')}}">Datos Usuarios 1</a>
+        </li>
+      </ul>
+    </nav>
+    <section id="content">{% block content %} {% endblock %}</section>
+
+    <footer>
+      <hr />
+      <h2>Proyecto de final de curso de Deusto de Python</h2>
+    </footer>
+  </body>
+</html>
+
+<!-- Podemos añadir contenido sin sobreescribir el anterior usando {{ super }} dentro de un bloque -->

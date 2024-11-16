@@ -1,0 +1,58 @@
+span{
+font-family: 'Verdana', sans-serif;
+margin-bottom: .3em;
+
+}
+input{
+    margin-bottom: 1em;
+    padding: .4em;
+}
+#contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+}
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    height: 500px;
+    width: 20%;
+    background-color: rgb(243, 243, 243);
+}
+form{
+    justify-content: center;
+    align-items: center;
+}
+#email, #nombre, #apellidos, #contrasena, #telefono, #edad{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#boton{
+    display: flex;
+    justify-content: center;
+}
+#enviar{
+    font-family: 'Verdana';
+    margin: 1em auto;
+    padding: .5em;
+    width: 60%;
+    border-radius: 1em;
+    border-style: none;
+    border: .1em solid rgb(207, 207, 207);
+}
+#enviar:hover{
+    background-color: rgb(202, 202, 202);
+}
+table{
+    width: 60%;
+}
+hr{
+    margin: 5em auto;
+}
+td{
+    text-align: center;
+}

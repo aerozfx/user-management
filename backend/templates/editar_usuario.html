@@ -1,0 +1,42 @@
+<!-- Página principal donde se encuentra el formulario para pedir datos -->
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<h1>Editar: {{usuario.2}} {{usuario.3}}</h1>
+
+        <div class="formulario">
+            <form action="" method="post">
+                <div id="email">
+                    <span>Email</span>
+                    <input type="email" name="email" id="email" value="{{usuario.1}}">
+                </div>
+                <div id="nombre">
+                    <span>Nombre</span>
+                    <input type="text" name="nombre" id="nombre" value="{{usuario.2}}">
+                </div>
+                <div id="apellidos">
+                    <span>Apellidos</span>
+                    <input type="text" name="apellidos" id="apellidos" value="{{usuario.3}}">
+                </div>
+                <div id="contrasena">
+                    <span>Contraseña</span>
+                    <input type="password" name="contrasena" id="contrasena" value="{{usuario.4}}">
+                </div>
+                <div id="telefono">
+                    <span>Telefono</span>
+                    <input type="tel" name="telefono" id="telefono" value="{{usuario.5}}">
+                </div>
+                <div id="edad">
+                    <span>Edad</span>
+                    <input type="number" name="edad" id="edad" value="{{usuario.6}}">
+                </div>
+                <div id="boton">
+                    <button type="submit" id="enviar">Actualizar</button>
+                </div>
+            </form>
+
+        </div>
+
+
+{% endblock %}

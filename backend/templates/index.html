@@ -1,0 +1,43 @@
+<!-- Página principal donde se encuentra el formulario para pedir datos -->
+{% extends 'layout.html' %} {% block content %}
+
+<h1>Crear usuario</h1>
+
+{% with messages = get_flashed_messages() %} {% if messages %} {% for message in
+messages %}
+<div>{{message}}</div>
+{% endfor%} {% endif %} {% endwith %}
+
+<div class="formulario">
+  <form action="" method="post">
+    <div id="email">
+      <span>Email</span>
+      <input type="email" name="email" id="email" />
+    </div>
+    <div id="nombre">
+      <span>Nombre</span>
+      <input type="text" name="nombre" id="nombre" />
+    </div>
+    <div id="apellidos">
+      <span>Apellidos</span>
+      <input type="text" name="apellidos" id="apellidos" />
+    </div>
+    <div id="contrasena">
+      <span>Contraseña</span>
+      <input type="text" name="contrasena" id="contrasena" />
+    </div>
+    <div id="telefono">
+      <span>Telefono</span>
+      <input type="tel" name="telefono" id="telefono" />
+    </div>
+    <div id="edad">
+      <span>Edad</span>
+      <input type="number" name="edad" id="edad" />
+    </div>
+    <div id="boton">
+      <button type="submit" id="enviar">Enviar</button>
+    </div>
+  </form>
+</div>
+
+{% endblock %}
